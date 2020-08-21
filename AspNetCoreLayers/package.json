@@ -1,0 +1,14 @@
+{
+  "name": "AspNetCoreLayers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wictorChaves/AspNetCoreLayers.git",
+  "author": "wictor <wictor@hotmail.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "start": "dotnet run -p .\\src\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj",
+    "start-watch": "dotnet watch run -p .\\src\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj",
+    "migration": "cd .\\src\\StoreOfBuild.Data\\ && dotnet ef --startup-project ..\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj --project .\\StoreOfBuild.Data.csproj migrations add addCategory",
+    "database-update": "cd .\\src\\StoreOfBuild.Data\\ && dotnet ef --startup-project ..\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj --project .\\StoreOfBuild.Data.csproj database update"
+  }
+}

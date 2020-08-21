@@ -1,0 +1,17 @@
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\appsetting.json
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.deps.json
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.runtimeconfig.json
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.runtimeconfig.dev.json
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.dll
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Domain.Core.dll
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Domain.dll
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Domain.Core.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\bin\Debug\netcoreapp2.2\Eventos.IO.Domain.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\obj\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\obj\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\obj\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.AssemblyInfo.cs
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\obj\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.csproj.CopyComplete
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\obj\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.dll
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\obj\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\Github\Eventos.IO\src\Eventos.IO.Infra.Data\obj\Debug\netcoreapp2.2\Eventos.IO.Infra.Data.csprojAssemblyReference.cache

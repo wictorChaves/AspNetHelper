@@ -1,0 +1,9 @@
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\bin\Debug\netstandard2.0\StoreOfBuild.Domain.deps.json
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\bin\Debug\netstandard2.0\StoreOfBuild.Domain.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\bin\Debug\netstandard2.0\StoreOfBuild.Domain.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\obj\Debug\netstandard2.0\StoreOfBuild.Domain.csprojAssemblyReference.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\obj\Debug\netstandard2.0\StoreOfBuild.Domain.csproj.CoreCompileInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\obj\Debug\netstandard2.0\StoreOfBuild.Domain.AssemblyInfoInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\obj\Debug\netstandard2.0\StoreOfBuild.Domain.AssemblyInfo.cs
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\obj\Debug\netstandard2.0\StoreOfBuild.Domain.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.Domain\obj\Debug\netstandard2.0\StoreOfBuild.Domain.pdb

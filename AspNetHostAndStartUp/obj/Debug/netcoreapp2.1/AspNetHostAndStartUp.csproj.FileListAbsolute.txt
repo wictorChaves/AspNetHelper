@@ -1,0 +1,11 @@
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\obj\Debug\netcoreapp2.1\AspNetHostAndStartUp.csprojAssemblyReference.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\obj\Debug\netcoreapp2.1\AspNetHostAndStartUp.csproj.CoreCompileInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\obj\Debug\netcoreapp2.1\AspNetHostAndStartUp.AssemblyInfoInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\obj\Debug\netcoreapp2.1\AspNetHostAndStartUp.AssemblyInfo.cs
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\bin\Debug\netcoreapp2.1\AspNetHostAndStartUp.deps.json
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\bin\Debug\netcoreapp2.1\AspNetHostAndStartUp.runtimeconfig.json
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\bin\Debug\netcoreapp2.1\AspNetHostAndStartUp.runtimeconfig.dev.json
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\bin\Debug\netcoreapp2.1\AspNetHostAndStartUp.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\bin\Debug\netcoreapp2.1\AspNetHostAndStartUp.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\obj\Debug\netcoreapp2.1\AspNetHostAndStartUp.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetHostAndStartUp\obj\Debug\netcoreapp2.1\AspNetHostAndStartUp.pdb

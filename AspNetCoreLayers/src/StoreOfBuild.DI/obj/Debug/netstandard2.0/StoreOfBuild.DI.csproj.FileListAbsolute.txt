@@ -1,0 +1,14 @@
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\bin\Debug\netstandard2.0\StoreOfBuild.DI.deps.json
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\bin\Debug\netstandard2.0\StoreOfBuild.DI.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\bin\Debug\netstandard2.0\StoreOfBuild.DI.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\obj\Debug\netstandard2.0\StoreOfBuild.DI.csprojAssemblyReference.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\obj\Debug\netstandard2.0\StoreOfBuild.DI.csproj.CoreCompileInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\obj\Debug\netstandard2.0\StoreOfBuild.DI.AssemblyInfoInputs.cache
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\obj\Debug\netstandard2.0\StoreOfBuild.DI.AssemblyInfo.cs
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\obj\Debug\netstandard2.0\StoreOfBuild.DI.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\obj\Debug\netstandard2.0\StoreOfBuild.DI.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\bin\Debug\netstandard2.0\StoreOfBuild.Data.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\bin\Debug\netstandard2.0\StoreOfBuild.Domain.dll
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\bin\Debug\netstandard2.0\StoreOfBuild.Data.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\bin\Debug\netstandard2.0\StoreOfBuild.Domain.pdb
+C:\Users\wictor\Documents\Wictor\Workspace\DotnetCore\AspNetCoreLayers\src\StoreOfBuild.DI\obj\Debug\netstandard2.0\StoreOfBuild.DI.csproj.CopyComplete
