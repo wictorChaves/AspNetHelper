@@ -18,7 +18,6 @@ using Eventos.IO.Infra.Data.Context;
 using Eventos.IO.Infra.Data.Repository;
 using Eventos.IO.Infra.Data.UoW;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;

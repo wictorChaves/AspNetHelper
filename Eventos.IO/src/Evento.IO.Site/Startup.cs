@@ -16,15 +16,17 @@ namespace Evento.IO.Site
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public IConfiguration Configuration { get; }
+        private IHostingEnvironment _environment { get; }
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            _environment = environment;
         }
 
-        public IConfiguration Configuration { get; }
-        
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -45,13 +47,24 @@ namespace Evento.IO.Site
                 options.AddPolicy("PodeGravar", policy => policy.RequireClaim("Eventos", "Gravar"));
             });
 
+            if (_environment.EnvironmentName != "Production")
+                services.Configure<IdentityOptions>(options =>
+                {
+                    options.Password.RequireDigit = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireNonAlphanumeric = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequiredLength = 6;
+                    options.Password.RequiredUniqueChars = 1;
+                });
+
             services.AddAutoMapper();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             RegisterServices(services);
         }
-        
+
         public void Configure(
-            IApplicationBuilder app, 
+            IApplicationBuilder app,
             IHostingEnvironment env,
             IHttpContextAccessor accessor)
         {
@@ -72,7 +85,7 @@ namespace Evento.IO.Site
             app.UseCookiePolicy();
 
             app.UseAuthentication();
-            
+
             //app.UseMvc();
 
             app.UseMvc(routes =>

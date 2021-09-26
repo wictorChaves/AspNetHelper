@@ -28,7 +28,7 @@ namespace Evento.IO.Site.Controllers
         }
 
         [Route("meus-eventos")]
-        [Authorize(Policy = "PodeLerEventos")]
+        [Authorize(Policy = "PodeLerEventos0")]
         public IActionResult MeusEventos()
         {
             return View(_eventoAppService.ObterEventoPorOrganizador(OrganizadorId));
@@ -43,7 +43,6 @@ namespace Evento.IO.Site.Controllers
             return View(eventoViewModel);
         }
 
-        [Authorize]
         [Route("novo-evento")]
         [Authorize(Policy = "PodeGravar")]
         public IActionResult Create()
@@ -51,7 +50,6 @@ namespace Evento.IO.Site.Controllers
             return View();
         }
 
-        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("novo-evento")]
@@ -77,7 +75,6 @@ namespace Evento.IO.Site.Controllers
             return View(eventoViewModel);
         }
 
-        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("editar-evento/{id:guid}")]
@@ -109,7 +106,6 @@ namespace Evento.IO.Site.Controllers
             return View(eventoViewModel);
         }
 
-        [Authorize]
         [HttpPost, ActionName("Delete")]
         [Route("editar-evento/{id:guid}")]
         [ValidateAntiForgeryToken]
