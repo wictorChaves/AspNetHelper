@@ -28,7 +28,7 @@ namespace Evento.IO.Site.Controllers
         }
 
         [Route("meus-eventos")]
-        [Authorize(Policy = "PodeLerEventos0")]
+        [Authorize(Policy = "PodeLerEventos")]
         public IActionResult MeusEventos()
         {
             return View(_eventoAppService.ObterEventoPorOrganizador(OrganizadorId));
