@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2019
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{DCBB0EFC-0333-4348-9D7E-29C7FE27C269}"
 EndProject
@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.CrossCutti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.CrossCutting.Bus", "src\Eventos.IO.Infra.CrossCutting.Bus\Eventos.IO.Infra.CrossCutting.Bus.csproj", "{36428DAD-8CDC-4435-B397-2E38AA68725B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos.IO.Infra.CrossCutting.Identity", "src\Eventos.IO.Infra.CrossCutting.Identity\Eventos.IO.Infra.CrossCutting.Identity.csproj", "{9D5F9F17-ACB2-4106-A1F0-DAC5556E6E49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.CrossCutting.Identity", "src\Eventos.IO.Infra.CrossCutting.Identity\Eventos.IO.Infra.CrossCutting.Identity.csproj", "{9D5F9F17-ACB2-4106-A1F0-DAC5556E6E49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos.IO.Infra.CrossCutting.AspNetFilters", "src\Eventos.IO.Infra.CrossCutting.AspNetFilters\Eventos.IO.Infra.CrossCutting.AspNetFilters.csproj", "{9AC5890E-443E-4985-A46A-7C72F896D0C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{9D5F9F17-ACB2-4106-A1F0-DAC5556E6E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D5F9F17-ACB2-4106-A1F0-DAC5556E6E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D5F9F17-ACB2-4106-A1F0-DAC5556E6E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC5890E-443E-4985-A46A-7C72F896D0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC5890E-443E-4985-A46A-7C72F896D0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC5890E-443E-4985-A46A-7C72F896D0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC5890E-443E-4985-A46A-7C72F896D0C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{B57CA4B6-29BC-4414-8ABD-C6158CCACD1E} = {38535F54-2153-407B-8570-ACA81C3C0B55}
 		{36428DAD-8CDC-4435-B397-2E38AA68725B} = {38535F54-2153-407B-8570-ACA81C3C0B55}
 		{9D5F9F17-ACB2-4106-A1F0-DAC5556E6E49} = {38535F54-2153-407B-8570-ACA81C3C0B55}
+		{9AC5890E-443E-4985-A46A-7C72F896D0C5} = {38535F54-2153-407B-8570-ACA81C3C0B55}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F97E2142-6427-4CAC-A234-A0031E25FFC6}

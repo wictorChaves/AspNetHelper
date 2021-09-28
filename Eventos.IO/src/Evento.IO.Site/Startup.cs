@@ -11,6 +11,11 @@ using Eventos.IO.Infra.CrossCutting.Bus;
 using Eventos.IO.Infra.CrossCutting.IoC;
 using AutoMapper;
 using Eventos.IO.Infra.CrossCutting.Identity.Data;
+using Eventos.IO.Infra.CrossCutting.AspNetFilters;
+using System;
+using Microsoft.Extensions.Logging;
+using Elmah.Io.AspNetCore;
+using Elmah.Io.Extensions.Logging;
 
 namespace Evento.IO.Site
 {
@@ -26,7 +31,6 @@ namespace Evento.IO.Site
 
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -47,7 +51,7 @@ namespace Evento.IO.Site
                 options.AddPolicy("PodeGravar", policy => policy.RequireClaim("Eventos", "Gravar"));
             });
 
-            if (_environment.EnvironmentName != "Production")
+            if (_environment.IsDevelopment())
                 services.Configure<IdentityOptions>(options =>
                 {
                     options.Password.RequireDigit = false;
@@ -58,17 +62,24 @@ namespace Evento.IO.Site
                     options.Password.RequiredUniqueChars = 1;
                 });
 
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new ServiceFilterAttribute(typeof(GlobalExceptionHandlingFilter)));
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
             services.AddAutoMapper();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             RegisterServices(services);
         }
 
         public void Configure(
             IApplicationBuilder app,
-            IHostingEnvironment env,
-            IHttpContextAccessor accessor)
+            IHttpContextAccessor accessor,
+            ILoggerFactory loggerFactory
+            )
         {
-            if (env.IsDevelopment())
+            loggerFactory.AddElmahIo("04f3bea824e54f0bb09b8c73d8967186", new Guid("bd857b62-d3eb-4d72-8155-6a9d92622a11"));
+
+            if (_environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
@@ -81,13 +92,10 @@ namespace Evento.IO.Site
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
             app.UseCookiePolicy();
-
             app.UseAuthentication();
 
-            //app.UseMvc();
-
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes

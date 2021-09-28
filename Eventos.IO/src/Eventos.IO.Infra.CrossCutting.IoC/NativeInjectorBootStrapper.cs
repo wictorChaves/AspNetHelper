@@ -12,6 +12,7 @@ using Eventos.IO.Domain.Interfaces;
 using Eventos.IO.Domain.Organizadores.Commands;
 using Eventos.IO.Domain.Organizadores.Events;
 using Eventos.IO.Domain.Organizadores.Repository;
+using Eventos.IO.Infra.CrossCutting.AspNetFilters;
 using Eventos.IO.Infra.CrossCutting.Bus;
 using Eventos.IO.Infra.CrossCutting.Identity.Models;
 using Eventos.IO.Infra.Data.Context;
@@ -19,6 +20,7 @@ using Eventos.IO.Infra.Data.Repository;
 using Eventos.IO.Infra.Data.UoW;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -35,6 +37,7 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
             _domainEventos(services);
             _infraData(services);
             _infraBus(services);
+            _infraFilter(services);
             _identity(services);
         }
 
@@ -45,16 +48,6 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
 
         private static void _application(IServiceCollection services)
         {
-            /**
-             * https://stackoverflow.com/questions/51625446/mapper-not-initialized-call-initialize-with-appropriate-configuration 
-             * Esta linha foi criada seguindo a vídeo aula, porem ela esta apresentando o erro do linha acima, então ...
-             */
-            //services.AddSingleton(Mapper.Configuration);
-
-            /**
-             * ... Alterei a linha para, levando em consideração esta link abaixo
-             * https://github.com/EduardoPires/EquinoxProject/issues/83
-             */
             services.AddSingleton<IConfigurationProvider>(AutoMapperConfiguration.RegisterMappings());
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
             services.AddScoped<IEventoAppService, EventoAppService>();
@@ -93,6 +86,12 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
         private static void _infraBus(IServiceCollection services)
         {
             services.AddScoped<IBus, InMemoryBus>();
+        }
+
+        private static void _infraFilter(IServiceCollection services)
+        {
+            services.AddScoped<ILogger<GlobalExceptionHandlingFilter>, Logger<GlobalExceptionHandlingFilter>>();
+            services.AddScoped<GlobalExceptionHandlingFilter>();
         }
 
         private static void _identity(IServiceCollection services)

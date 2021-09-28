@@ -9,9 +9,12 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Elmah.Io.AspNetCore" Version="4.0.30" />
+    <PackageReference Include="Elmah.Io.Extensions.Logging" Version="4.0.24" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
@@ -19,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Eventos.IO.Application\Eventos.IO.Application.csproj" />
+    <ProjectReference Include="..\Eventos.IO.Infra.CrossCutting.AspNetFilters\Eventos.IO.Infra.CrossCutting.AspNetFilters.csproj" />
     <ProjectReference Include="..\Eventos.IO.Infra.CrossCutting.Bus\Eventos.IO.Infra.CrossCutting.Bus.csproj" />
     <ProjectReference Include="..\Eventos.IO.Infra.CrossCutting.Identity\Eventos.IO.Infra.CrossCutting.Identity.csproj" />
     <ProjectReference Include="..\Eventos.IO.Infra.CrossCutting.IoC\Eventos.IO.Infra.CrossCutting.IoC.csproj" />
