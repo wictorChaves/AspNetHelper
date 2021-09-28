@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="elmah.corelibrary" Version="1.2.2" />
+    <PackageReference Include="Elmah.Io.Client" Version="4.0.29" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />

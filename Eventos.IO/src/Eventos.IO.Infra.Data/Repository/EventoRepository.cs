@@ -53,8 +53,6 @@ namespace Eventos.IO.Infra.Data.Repository
                       "AND E.ORGANIZADORID = @oid " +
                       "ORDER BY E.DATAFIM DESC";
 
-            throw new Exception("Error 3!!!");
-
             return Db.Database.GetDbConnection().Query<Evento>(sql, new { oid = organizadorId });
         }
         

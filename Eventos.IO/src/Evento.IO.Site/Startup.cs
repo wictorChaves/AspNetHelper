@@ -62,9 +62,16 @@ namespace Evento.IO.Site
                     options.Password.RequiredUniqueChars = 1;
                 });
 
+            services.AddElmahIo(o =>
+            {
+                o.ApiKey = "04f3bea824e54f0bb09b8c73d8967186";
+                o.LogId = new Guid("bd857b62-d3eb-4d72-8155-6a9d92622a11");
+            });
+
             services.AddMvc(options =>
             {
                 options.Filters.Add(new ServiceFilterAttribute(typeof(GlobalExceptionHandlingFilter)));
+                options.Filters.Add(new ServiceFilterAttribute(typeof(GlobalActionLogger)));
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddAutoMapper();
@@ -78,6 +85,7 @@ namespace Evento.IO.Site
             )
         {
             loggerFactory.AddElmahIo("04f3bea824e54f0bb09b8c73d8967186", new Guid("bd857b62-d3eb-4d72-8155-6a9d92622a11"));
+            app.UseElmahIo();
 
             if (_environment.IsDevelopment())
             {

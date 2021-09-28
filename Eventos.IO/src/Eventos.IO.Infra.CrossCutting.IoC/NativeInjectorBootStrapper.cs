@@ -91,7 +91,9 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
         private static void _infraFilter(IServiceCollection services)
         {
             services.AddScoped<ILogger<GlobalExceptionHandlingFilter>, Logger<GlobalExceptionHandlingFilter>>();
-            services.AddScoped<GlobalExceptionHandlingFilter>();
+            services.AddScoped<ILogger<GlobalActionLogger>, Logger<GlobalActionLogger>>();
+            services.AddScoped<GlobalExceptionHandlingFilter>();            
+            services.AddScoped<GlobalActionLogger>();
         }
 
         private static void _identity(IServiceCollection services)
