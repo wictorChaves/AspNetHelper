@@ -6,11 +6,11 @@ using System.Security.Claims;
 
 namespace Eventos.IO.Infra.CrossCutting.Identity.Models
 {
-    public class AspNetUser : IUser
+    public class ApplicationUser : IUser
     {
         private readonly IHttpContextAccessor _acessor;
 
-        public AspNetUser(IHttpContextAccessor acessor)
+        public ApplicationUser(IHttpContextAccessor acessor)
         {
             _acessor = acessor;
         }

@@ -98,7 +98,7 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
 
         private static void _identity(IServiceCollection services)
         {
-            services.AddScoped<IUser, AspNetUser>();
+            services.AddScoped<IUser, ApplicationUser>();
         }
     }
 }
