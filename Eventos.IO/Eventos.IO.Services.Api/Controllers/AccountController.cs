@@ -1,6 +1,8 @@
-﻿using Eventos.IO.Domain.Core.Bus;
+﻿using Evento.IO.Site.Areas.Identity.Pages.Account.ViewModel;
+using Eventos.IO.Domain.Core.Bus;
 using Eventos.IO.Domain.Core.Notifications;
 using Eventos.IO.Domain.Interfaces;
+using Eventos.IO.Domain.Organizadores.Commands;
 using Eventos.IO.Infra.CrossCutting.Identity.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -22,7 +24,8 @@ namespace Eventos.IO.Services.Api.Controllers
 
         public AccountController(
             IDomainNotificationHandler<DomainNotification> notifications,
-            IUser user, UserManager<ApplicationUser> userManager,
+            IUser user,
+            UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> singInManager,
             IBus bus,
             ILoggerFactory loggerFactory
@@ -33,5 +36,32 @@ namespace Eventos.IO.Services.Api.Controllers
             _bus = bus;
             _logger = loggerFactory.CreateLogger<AccountController>();
         }
+
+        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
+        {
+            if (!ModelState.IsValid) return Response(model);
+
+            var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+            if (result.Succeeded)
+            {
+                var registroCommand = new RegistrarOrganizadorCommand(Guid.Parse(user.Id), model.Nome, model.CPF, user.Email);
+                _bus.SendCommand(registroCommand);
+
+                if (!OperacaoValida())
+                {
+                    await _userManager.DeleteAsync(user);
+                    return Response(model);
+                }
+
+                _logger.LogInformation(1, "Usuário criado com sucesso!");
+                return Ok(model);
+            }
+
+            return Response(model);
+        }
+
+
     }
 }
