@@ -2,16 +2,16 @@
 
 ## Controller no swagger
 
-![](./Docs/images/3.png)
+![](./SwaggerGetComment/Docs/images/3.png)
 
 ## Controller
 
-![](./Docs/images/1.png)
+![](./SwaggerGetComment/Docs/images/1.png)
 
 ## Model
 
-![](./Docs/images/4.png)
+![](./SwaggerGetComment/Docs/images/4.png)
 
 ## Model no swagger
 
-![](./Docs/images/2.png)
+![](./SwaggerGetComment/Docs/images/2.png)
