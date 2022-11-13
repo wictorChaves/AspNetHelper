@@ -1,12 +1,12 @@
 ﻿# Swagger Get Comment
 
-## Controller
-
-![](./Docs/images/1.png)
-
 ## Controller no swagger
 
 ![](./Docs/images/3.png)
+
+## Controller
+
+![](./Docs/images/1.png)
 
 ## Model
 
