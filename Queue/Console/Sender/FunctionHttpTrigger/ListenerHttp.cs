@@ -1,6 +1,5 @@
-using System.IO;
-using System.Net;
-using System.Threading.Tasks;
+using Azure;
+using Azure.Storage.Queues.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -9,7 +8,10 @@ using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Newtonsoft.Json;
+using Sender;
+using System.IO;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace FunctionHttpTrigger
 {
@@ -27,22 +29,23 @@ namespace FunctionHttpTrigger
         [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]
         [OpenApiParameter(name: "name", In = ParameterLocation.Query, Required = true, Type = typeof(string), Description = "The **Name** parameter")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "text/plain", bodyType: typeof(string), Description = "The OK response")]
-        public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req)
+        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
-
-            string name = req.Query["name"];
-
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+            return await SendMessageAndReturnOkResult(requestBody);
+        }
 
-            string responseMessage = string.IsNullOrEmpty(name)
-                ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+        private async Task<IActionResult> SendMessageAndReturnOkResult(string requestBody)
+        {
+            var sendReceipt = await SendMessage(requestBody);
+            return new OkObjectResult($"Mensagem com o ID {sendReceipt.Value.MessageId} enviada!");
+        }
 
-            return new OkObjectResult(responseMessage);
+        private async Task<Response<SendReceipt>> SendMessage(string responseMessage)
+        {
+            var queueManager = QueueManager.CreateInstace("fila-teste");
+            return await queueManager.InsertMessage(responseMessage);
         }
     }
 }
