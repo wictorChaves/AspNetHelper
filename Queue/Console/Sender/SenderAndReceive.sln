@@ -5,11 +5,11 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SenderAndReceive", "SenderAndReceive\SenderAndReceive.csproj", "{973CA038-B5DB-4E80-B5F8-588D3873D06F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenderAndReceiveAsync", "SenderAndReceiveAsync\SenderAndReceiveAsync.csproj", "{58446CAE-03CD-4B56-A3D6-628A5F50BA44}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionQueueTrigger", "FunctionQueueTrigger\FunctionQueueTrigger.csproj", "{5A57A999-0845-4EEA-BC5B-708AB6B4646B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csproj", "{5E2801BC-FD8E-43AF-B830-6BDFE18EADC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionHttpTrigger", "FunctionHttpTrigger\FunctionHttpTrigger.csproj", "{8706AC60-144B-4EF7-9C10-0FB4D37D17AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{973CA038-B5DB-4E80-B5F8-588D3873D06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{973CA038-B5DB-4E80-B5F8-588D3873D06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{973CA038-B5DB-4E80-B5F8-588D3873D06F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58446CAE-03CD-4B56-A3D6-628A5F50BA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58446CAE-03CD-4B56-A3D6-628A5F50BA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58446CAE-03CD-4B56-A3D6-628A5F50BA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58446CAE-03CD-4B56-A3D6-628A5F50BA44}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A57A999-0845-4EEA-BC5B-708AB6B4646B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A57A999-0845-4EEA-BC5B-708AB6B4646B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A57A999-0845-4EEA-BC5B-708AB6B4646B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{5E2801BC-FD8E-43AF-B830-6BDFE18EADC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E2801BC-FD8E-43AF-B830-6BDFE18EADC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E2801BC-FD8E-43AF-B830-6BDFE18EADC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8706AC60-144B-4EF7-9C10-0FB4D37D17AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8706AC60-144B-4EF7-9C10-0FB4D37D17AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8706AC60-144B-4EF7-9C10-0FB4D37D17AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8706AC60-144B-4EF7-9C10-0FB4D37D17AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
