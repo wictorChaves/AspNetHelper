@@ -5,13 +5,17 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SenderAndReceive", "SenderAndReceive\SenderAndReceive.csproj", "{973CA038-B5DB-4E80-B5F8-588D3873D06F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionQueueTrigger", "FunctionQueueTrigger\FunctionQueueTrigger.csproj", "{5A57A999-0845-4EEA-BC5B-708AB6B4646B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionQueueTrigger", "FunctionQueueTrigger\FunctionQueueTrigger.csproj", "{5A57A999-0845-4EEA-BC5B-708AB6B4646B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csproj", "{5E2801BC-FD8E-43AF-B830-6BDFE18EADC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sender", "Sender\Sender.csproj", "{5E2801BC-FD8E-43AF-B830-6BDFE18EADC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionHttpTrigger", "FunctionHttpTrigger\FunctionHttpTrigger.csproj", "{8706AC60-144B-4EF7-9C10-0FB4D37D17AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionHttpTrigger", "FunctionHttpTrigger\FunctionHttpTrigger.csproj", "{8706AC60-144B-4EF7-9C10-0FB4D37D17AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{B2257078-B53E-4476-983A-617307089A90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{B2257078-B53E-4476-983A-617307089A90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receive", "Receive\Receive.csproj", "{BFFFC0BE-2FFF-4D78-B228-497C0E3717FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionAppSenderAndReceiver", "FunctionAppSenderAndReceiver\FunctionAppSenderAndReceiver.csproj", "{0AD01751-8C15-40F6-9AF9-FB9552270A25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{B2257078-B53E-4476-983A-617307089A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2257078-B53E-4476-983A-617307089A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2257078-B53E-4476-983A-617307089A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFFC0BE-2FFF-4D78-B228-497C0E3717FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFFC0BE-2FFF-4D78-B228-497C0E3717FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFFC0BE-2FFF-4D78-B228-497C0E3717FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFFC0BE-2FFF-4D78-B228-497C0E3717FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD01751-8C15-40F6-9AF9-FB9552270A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD01751-8C15-40F6-9AF9-FB9552270A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD01751-8C15-40F6-9AF9-FB9552270A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD01751-8C15-40F6-9AF9-FB9552270A25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

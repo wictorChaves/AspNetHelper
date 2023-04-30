@@ -7,20 +7,20 @@ namespace Sender
 {
     public class QueueManager : IDisposable
     {
-        private readonly string _storageConnectionString;
+        private readonly string _AzureWebJobsStorage;
         private readonly QueueClient _queueClient;
         private readonly TimeSpan _visibilityTimeout;
         private QueueManager(string queueName)
         {
-            _storageConnectionString = GetConnectionString();
-            _queueClient = new QueueClient(_storageConnectionString, queueName);
+            _AzureWebJobsStorage = GetConnectionString();
+            _queueClient = new QueueClient(_AzureWebJobsStorage, queueName);
             _visibilityTimeout = TimeSpan.FromSeconds(5.0);
         }
 
         private string GetConnectionString()
         {
-            var connectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
-            if (string.IsNullOrEmpty(connectionString)) throw new Exception("Please enter the storage connection key using the \"StorageConnectionString\" key");
+            var connectionString = ConfigurationManager.AppSettings["AzureWebJobsStorage"];
+            if (string.IsNullOrEmpty(connectionString)) throw new Exception("Please enter the storage connection key using the \"AzureWebJobsStorage\" key");
             return connectionString;
         }
 

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "FunctionAppSenderAndReceiver": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7054",
+      "launchBrowser": false
+    }
+  }
+}

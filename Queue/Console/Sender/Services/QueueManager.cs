@@ -7,16 +7,13 @@ namespace Sender
 {
     public class QueueManager
     {
-        private readonly string _storageConnectionString;
+        private readonly string _AzureWebJobsStorage;
         private readonly QueueClient _queueClient;
         private readonly TimeSpan _visibilityTimeout;
         private QueueManager(string queueName)
         {
-            _storageConnectionString = GetConnectionString();
-            _queueClient = new QueueClient(_storageConnectionString, queueName, new QueueClientOptions
-            {
-                MessageEncoding = QueueMessageEncoding.Base64
-            });
+            _AzureWebJobsStorage = GetConnectionString();
+            _queueClient = new QueueClient(_AzureWebJobsStorage, queueName);
             _visibilityTimeout = TimeSpan.FromSeconds(5.0);
         }
 
@@ -29,7 +26,7 @@ namespace Sender
 
             var connectionString = consoleConnectionString ?? functionConnectionString;
 
-            if (string.IsNullOrEmpty(connectionString)) throw new Exception("Please enter the storage connection key using the \"StorageConnectionString\" key");
+            if (string.IsNullOrEmpty(connectionString)) throw new Exception("Please enter the storage connection key using the \"AzureWebJobsStorage\" key");
             return connectionString;
         }
 
@@ -44,7 +41,7 @@ namespace Sender
         {
             try
             {
-                _queueClient.CreateIfNotExists();
+                _queueClient.Create();
             }
             catch (Exception ex)
             {
@@ -54,7 +51,13 @@ namespace Sender
 
         public Task<Response<SendReceipt>> InsertMessage(string message)
         {
-            return _queueClient.SendMessageAsync(message);
+            return _queueClient.SendMessageAsync(Base64Encode(message));
+        }
+
+        public static string Base64Encode(string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return Convert.ToBase64String(plainTextBytes);
         }
 
         public Task<Response<PeekedMessage[]>> PeekMessages(int messageQuantity = 1)
