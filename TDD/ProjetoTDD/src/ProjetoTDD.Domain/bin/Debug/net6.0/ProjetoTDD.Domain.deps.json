@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProjetoTDD.Domain/1.0.0": {
+        "runtime": {
+          "ProjetoTDD.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoTDD.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

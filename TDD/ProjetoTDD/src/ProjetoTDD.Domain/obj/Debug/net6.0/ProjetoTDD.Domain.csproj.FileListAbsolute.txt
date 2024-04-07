@@ -1,0 +1,12 @@
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\bin\Debug\net6.0\ProjetoTDD.Domain.deps.json
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\bin\Debug\net6.0\ProjetoTDD.Domain.dll
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\bin\Debug\net6.0\ProjetoTDD.Domain.pdb
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ProjetoTDD.Domain.csproj.AssemblyReference.cache
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ProjetoTDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ProjetoTDD.Domain.AssemblyInfoInputs.cache
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ProjetoTDD.Domain.AssemblyInfo.cs
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ProjetoTDD.Domain.csproj.CoreCompileInputs.cache
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ProjetoTDD.Domain.dll
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\refint\ProjetoTDD.Domain.dll
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ProjetoTDD.Domain.pdb
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\src\ProjetoTDD.Domain\obj\Debug\net6.0\ref\ProjetoTDD.Domain.dll
