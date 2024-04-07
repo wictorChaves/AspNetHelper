@@ -1,8 +1,8 @@
 namespace ProjetoTDD.DomainTest
 {
-    public class UnitTest1
+    public class Utilities
     {
-        [Fact]
+        [Fact(DisplayName = "Description of my test")]
         public void Test1()
         {
 
