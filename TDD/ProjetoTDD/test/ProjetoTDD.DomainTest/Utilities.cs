@@ -5,7 +5,6 @@ namespace ProjetoTDD.DomainTest
         [Fact(DisplayName = "Description of my test")]
         public void Test1()
         {
-
-        }
+		}
     }
 }

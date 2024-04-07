@@ -8,6 +8,19 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "ExpectedObjects/3.5.4": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/ExpectedObjects.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/ExpectedObjects.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.1.0": {
         "type": "package",
         "compile": {
@@ -1201,7 +1214,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {
             "related": ".xml"
           }
         },
@@ -1802,6 +1815,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "ProjetoTDD.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProjetoTDD.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetoTDD.Domain.dll": {}
+        }
       }
     }
   },
@@ -1855,6 +1878,19 @@
         "coverlet-icon.png",
         "coverlet.collector.3.1.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "ExpectedObjects/3.5.4": {
+      "sha512": "7urJ3ZpCWIegl2JfDbmyIR+E1Wu/4sG9oJPYVBxByBnbVavFcOHbWTlDeWMJQAYu8ZgrO0OG8UeiCnsWbxzYlA==",
+      "type": "package",
+      "path": "expectedobjects/3.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "expectedobjects.3.5.4.nupkg.sha512",
+        "expectedobjects.nuspec",
+        "lib/net40/ExpectedObjects.dll",
+        "lib/netstandard1.3/ExpectedObjects.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.1.0": {
@@ -6098,11 +6134,18 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "ProjetoTDD.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../src/ProjetoTDD.Domain/ProjetoTDD.Domain.csproj",
+      "msbuildProject": "../../src/ProjetoTDD.Domain/ProjetoTDD.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ExpectedObjects >= 3.5.4",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
+      "ProjetoTDD.Domain >= 1.0.0",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -6138,7 +6181,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Wictor\\Workspace\\Github\\AspNetHelper\\TDD\\ProjetoTDD\\src\\ProjetoTDD.Domain\\ProjetoTDD.Domain.csproj": {
+              "projectPath": "C:\\Wictor\\Workspace\\Github\\AspNetHelper\\TDD\\ProjetoTDD\\src\\ProjetoTDD.Domain\\ProjetoTDD.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6151,6 +6198,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "ExpectedObjects": {
+            "target": "Package",
+            "version": "[3.5.4, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.1.0, )"

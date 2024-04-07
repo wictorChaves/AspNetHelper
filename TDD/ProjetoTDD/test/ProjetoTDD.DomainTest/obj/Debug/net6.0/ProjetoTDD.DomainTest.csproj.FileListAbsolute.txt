@@ -97,3 +97,7 @@ C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTes
 C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTest\obj\Debug\net6.0\ProjetoTDD.DomainTest.pdb
 C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTest\obj\Debug\net6.0\ProjetoTDD.DomainTest.genruntimeconfig.cache
 C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTest\obj\Debug\net6.0\ref\ProjetoTDD.DomainTest.dll
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTest\bin\Debug\net6.0\ExpectedObjects.dll
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTest\bin\Debug\net6.0\ProjetoTDD.Domain.dll
+C:\Wictor\Workspace\Github\AspNetHelper\TDD\ProjetoTDD\test\ProjetoTDD.DomainTest\bin\Debug\net6.0\ProjetoTDD.Domain.pdb

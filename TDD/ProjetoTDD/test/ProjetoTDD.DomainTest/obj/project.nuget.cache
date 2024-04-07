@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uYQrwQWB3Nep55ziwu16b2cH4kJEs4uU5P9k/Budid53OrDkEVJD8IqqKu5u5uPb1i2MxVcWONkHKIE9SyKcMg==",
+  "dgSpecHash": "vD+0Tu61KxedaSmylg2mHyBfPRrZRVb1HkV0A8icpFrPGpubONrmXPH1HnDrDwS0+tVngLkrFZTdkKmMj6o35Q==",
   "success": true,
   "projectFilePath": "C:\\Wictor\\Workspace\\Github\\AspNetHelper\\TDD\\ProjetoTDD\\test\\ProjetoTDD.DomainTest\\ProjetoTDD.DomainTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wictor\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\Wictor\\.nuget\\packages\\expectedobjects\\3.5.4\\expectedobjects.3.5.4.nupkg.sha512",
     "C:\\Users\\Wictor\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\Wictor\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Wictor\\.nuget\\packages\\microsoft.net.test.sdk\\17.1.0\\microsoft.net.test.sdk.17.1.0.nupkg.sha512",
